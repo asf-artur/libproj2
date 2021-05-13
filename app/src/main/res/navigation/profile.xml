@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile"
+    app:startDestination="@id/profileFragment">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.libproj2.ui.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_booksOnHandFragment"
+            app:destination="@id/booksOnHandFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_booksHistoryFragment"
+            app:destination="@id/booksHistoryFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_libraryCardFragment"
+            app:destination="@id/libraryCardFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_allBooksFragment"
+            app:destination="@id/allBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksOnHandFragment"
+        android:name="com.example.libproj2.ui.fragments.books_on_hand.BooksOnHandFragment"
+        android:label="fragment_books_on_hand"
+        tools:layout="@layout/fragment_books_on_hand" >
+        <action
+            android:id="@+id/action_booksOnHandFragment_to_bookDetailsTakenFragment"
+            app:destination="@id/bookDetailsTakenFragment" />
+        <action
+            android:id="@+id/action_booksOnHandFragment_to_showBarcodeFragment"
+            app:destination="@id/showBarcodeFragment" />
+        <action
+            android:id="@+id/action_booksOnHandFragment_to_bookDetailsToTakeFragment"
+            app:destination="@id/bookDetailsToTakeFragment" />
+        <action
+            android:id="@+id/action_booksOnHandFragment_to_nfcFragment2"
+            app:destination="@id/nfcFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsHistoryFragment"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsHistoryFragment"
+        android:label="fragment_book_details_history"
+        tools:layout="@layout/fragment_book_details_history" />
+    <fragment
+        android:id="@+id/bookDetailsTakenFragment"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsTakenFragment"
+        android:label="fragment_book_details_taken"
+        tools:layout="@layout/fragment_book_details_taken" >
+        <action
+            android:id="@+id/action_bookDetailsTakenFragment_to_showBarcodeFragment"
+            app:destination="@id/showBarcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsToTakeFragment"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsToTakeFragment"
+        android:label="fragment_book_details_to_take"
+        tools:layout="@layout/fragment_book_details_to_take" >
+        <action
+            android:id="@+id/action_bookDetailsToTakeFragment_to_tryBorrowBookWaitingFragment"
+            app:destination="@id/tryBorrowBookWaitingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/booksHistoryFragment"
+        android:name="com.example.libproj2.ui.fragments.books_history.BooksHistoryFragment"
+        android:label="fragment_books_history"
+        tools:layout="@layout/fragment_books_history" >
+        <action
+            android:id="@+id/action_booksHistoryFragment_to_bookDetailsHistoryFragment"
+            app:destination="@id/bookDetailsHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryCardFragment"
+        android:name="com.example.libproj2.ui.fragments.LibraryCardFragment"
+        android:label="fragment_library_card"
+        tools:layout="@layout/fragment_library_card" >
+        <action
+            android:id="@+id/action_libraryCardFragment_to_bookDetailsHistoryFragment"
+            app:destination="@id/bookDetailsHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showBarcodeFragment"
+        android:name="com.example.libproj2.ui.fragments.ShowBarcodeFragment"
+        android:label="fragment_show_barcode"
+        tools:layout="@layout/fragment_show_barcode" />
+    <fragment
+        android:id="@+id/allBooksFragment"
+        android:name="com.example.libproj2.ui.fragments.all_books.AllBooksFragment"
+        android:label="AllBooksFragment" >
+        <action
+            android:id="@+id/action_allBooksFragment_to_bookDetailsToTakeFragment"
+            app:destination="@id/bookDetailsToTakeFragment" />
+        <action
+            android:id="@+id/action_allBooksFragment_to_bookDetailsTakenFragment"
+            app:destination="@id/bookDetailsTakenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tryBorrowBookWaitingFragment"
+        android:name="com.example.libproj2.ui.fragments.TryBorrowBookWaitingFragment"
+        android:label="TryBorrowBookWaitingFragment" >
+        <action
+            android:id="@+id/action_tryBorrowBookWaitingFragment_to_booksOnHandFragment"
+            app:destination="@id/booksOnHandFragment" />
+        <action
+            android:id="@+id/action_tryBorrowBookWaitingFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nfcFragment2"
+        android:name="com.example.libproj2.ui.fragments.NfcFragment"
+        android:label="NfcFragment" >
+        <action
+            android:id="@+id/action_nfcFragment2_to_bookDetailsTakenFragment"
+            app:destination="@id/bookDetailsTakenFragment" />
+        <action
+            android:id="@+id/action_nfcFragment2_to_bookDetailsToTakeFragment"
+            app:destination="@id/bookDetailsToTakeFragment" />
+    </fragment>
+</navigation>

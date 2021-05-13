@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reader"
+    app:startDestination="@id/readerFragment">
+
+    <fragment
+        android:id="@+id/readerFragment"
+        android:name="com.example.libproj2.ui.fragments.ReaderFragment"
+        android:label="ReaderFragment" >
+        <action
+            android:id="@+id/action_readerFragment_to_readerFoundFragment"
+            app:destination="@id/readerFoundFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/readerFoundFragment"
+        android:name="com.example.libproj2.ui.fragments.ReaderFoundFragment"
+        android:label="ReaderFoundFragment" >
+        <action
+            android:id="@+id/action_readerFoundFragment_to_nfcFragment3"
+            app:destination="@id/nfcFragment3" />
+        <action
+            android:id="@+id/action_readerFoundFragment_to_bookDetailsTakenFragment3"
+            app:destination="@id/bookDetailsTakenFragment3" />
+        <action
+            android:id="@+id/action_readerFoundFragment_to_bookDetailsToTakeFragment3"
+            app:destination="@id/bookDetailsToTakeFragment3" />
+        <action
+            android:id="@+id/action_readerFoundFragment_to_bookDetailsTakenFragment32"
+            app:destination="@id/bookDetailsTakenFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/nfcFragment3"
+        android:name="com.example.libproj2.ui.fragments.NfcFragment"
+        android:label="NfcFragment" >
+        <action
+            android:id="@+id/action_nfcFragment3_to_bookDetailsToTakeFragment3"
+            app:destination="@id/bookDetailsToTakeFragment3" />
+        <action
+            android:id="@+id/action_nfcFragment3_to_bookDetailsTakenFragment3"
+            app:destination="@id/bookDetailsTakenFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookDetailsToTakeFragment3"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsToTakeFragment"
+        android:label="fragment_book_details_to_take"
+        tools:layout="@layout/fragment_book_details_to_take" />
+    <fragment
+        android:id="@+id/bookDetailsTakenFragment3"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsTakenFragment"
+        android:label="fragment_book_details_taken"
+        tools:layout="@layout/fragment_book_details_taken" />
+</navigation>

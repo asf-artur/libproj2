@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifications"
+    app:startDestination="@id/notificationsFragment">
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.example.libproj2.ui.fragments.notifications.NotificationsFragment"
+        android:label="NotificationsFragment"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notificationsFragment_to_libraryCardFragment2"
+            app:destination="@id/libraryCardFragment2" />
+        <action
+            android:id="@+id/action_notificationsFragment_to_bookDetailsFromNotificationFragment"
+            app:destination="@id/bookDetailsFromNotificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libraryCardFragment2"
+        android:name="com.example.libproj2.ui.fragments.LibraryCardFragment"
+        android:label="fragment_library_card"
+        tools:layout="@layout/fragment_library_card" />
+    <fragment
+        android:id="@+id/bookDetailsFromNotificationFragment"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsFromNotificationFragment"
+        android:label="BookDetailsFromNotificationFragment" />
+</navigation>

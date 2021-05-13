@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подробнее о книге"
+        android:textSize="@dimen/text_standard"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/other_textview"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Автор: Журавлева Ольга Николаевна, Пашкова Татьяна Ильинична
+Редактор: Тишков В. А.
+Издательство: Вентана-Граф, 2019 г.
+Серия: Линия УМК Тишкова. История России (10-11)"
+        android:textSize="@dimen/text_standard"/>
+
+</LinearLayout>

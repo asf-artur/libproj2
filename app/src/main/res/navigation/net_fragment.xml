@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/net_fragment"
+    app:startDestination="@id/netFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_net"
+        android:id="@+id/netFragment"
+        android:name="com.example.libproj2.ui.fragments.NetFragment"
+        android:label="NetFragment" />
+</navigation>

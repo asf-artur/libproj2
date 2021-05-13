@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LibProj2</string>
+    <string name="books_on_hand">Книг на руках: %1$s</string>
+    <string name="books_history">Всего взято книг: %1$s</string>
+    <string name="all_books">Всего книг: %1$s</string>
+    <string name="librarycard_barcode">Номер читательского билета: %1$s</string>
+    <string name="nfc_not_supported">Работа с RFID(NFC) не поддерживается</string>
+    <string name="nfc_not_enabled">RFID(NFC) не включен</string>
+    <string name="nfc_enabled">Работает RFID(NFC)</string>
+    <string name="sample_reader_name"><u>О. Н. Журавлева</u></string>
+    <string name="sample_book_name"><u>История России 11 класс Часть 1</u></string>
+    <string name="notification_tryborrowbook_lib">Читатель %1$s пытается взять книгу %2$s</string>
+    <string name="notification_rejectborrowbook_lib">Читателю %1$s отклонено в книге %2$s</string>
+    <string name="notification_bookisborrowed_lib">Читатель %1$s взял книгу %2$s</string>
+</resources>

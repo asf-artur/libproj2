@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nfc"
+    app:startDestination="@id/nfcFragment">
+
+    <fragment
+        android:id="@+id/nfcFragment"
+        android:name="com.example.libproj2.ui.fragments.NfcFragment"
+        android:label="NfcFragment" />
+</navigation>

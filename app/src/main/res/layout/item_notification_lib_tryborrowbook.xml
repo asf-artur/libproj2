@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/notif_yellow_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:text="20.20.2020 20:20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Попытка взять книгу"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_textView" />
+
+    <TextView
+        android:id="@+id/content_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Читатель О. Н. Журавлева  пытается взять книгу: История России 11 класс Часть 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_textView">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="14dp"
+            android:text="Подтвердить"
+            android:textSize="@dimen/button_text_standard" />
+
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/red"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:paddingVertical="14dp"
+            android:text="Отклонить"
+            android:textSize="@dimen/button_text_standard" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

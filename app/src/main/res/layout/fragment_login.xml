@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.LoginFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar_default"
+        android:id="@+id/toolbar_default"/>
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/library_icon"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:hint="Логин"
+        app:hintEnabled="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_textedit"
+            android:text="a"
+            android:background="@drawable/only_stroke_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        app:endIconMode="password_toggle"
+        android:hint="Пароль"
+        app:hintEnabled="true"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:inputType="textPassword"
+            android:id="@+id/password_textedit"
+            android:text="a"
+            android:background="@drawable/only_stroke_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:enabled="true"
+        android:id="@+id/ok_button"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:paddingVertical="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Войти"/>
+
+</LinearLayout>

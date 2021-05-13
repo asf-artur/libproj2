@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/catalog"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.libproj2.ui.fragments.catalog.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" >
+        <action
+            android:id="@+id/action_catalogFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment" />
+        <action
+            android:id="@+id/action_catalogFragment_to_bookSearchResult"
+            app:destination="@id/bookSearchResult" />
+        <action
+            android:id="@+id/action_catalogFragment_to_searchFiltersFragment"
+            app:destination="@id/searchFiltersFragment" />
+        <action
+            android:id="@+id/action_catalogFragment_to_bookDetailsTakenFragment2"
+            app:destination="@id/bookDetailsTakenFragment2" />
+        <action
+            android:id="@+id/action_catalogFragment_to_bookDetailsToTakeFragment2"
+            app:destination="@id/bookDetailsToTakeFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.example.libproj2.ui.fragments.search_results.SearchResultsFragment"
+        android:label="fragment_search_results"
+        tools:layout="@layout/fragment_search_results" >
+        <action
+            android:id="@+id/action_searchResultsFragment_to_bookSearchResult"
+            app:destination="@id/bookSearchResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookSearchResult"
+        android:name="com.example.libproj2.ui.fragments.BookSearchResultFragment"
+        android:label="BookSearchResult" />
+    <fragment
+        android:id="@+id/searchFiltersFragment"
+        android:name="com.example.libproj2.ui.fragments.SearchFiltersFragment"
+        android:label="SearchFiltersFragment" />
+    <fragment
+        android:id="@+id/bookDetailsTakenFragment2"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsTakenFragment"
+        android:label="fragment_book_details_taken"
+        tools:layout="@layout/fragment_book_details_taken" />
+    <fragment
+        android:id="@+id/bookDetailsToTakeFragment2"
+        android:name="com.example.libproj2.ui.fragments.BookDetailsToTakeFragment"
+        android:label="fragment_book_details_to_take"
+        tools:layout="@layout/fragment_book_details_to_take" />
+</navigation>

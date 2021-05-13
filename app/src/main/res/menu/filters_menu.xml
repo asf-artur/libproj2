@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/app_bar_switch"
+            android:title="Поиск в каталоге библиотеки"
+            app:actionLayout="@layout/switch_item" />
+        <item
+            android:id="@+id/app_bar_switch1"
+            android:title="Поиск в каталоге Google"
+            app:actionLayout="@layout/switch_item" />
+        <item
+            android:visible="false"
+            android:id="@+id/app_bar_switch2"
+            android:title="Поиск по экземплярам в каталоге библиотеки"
+            app:actionLayout="@layout/switch_item" />
+    </group>
+
+</menu>
